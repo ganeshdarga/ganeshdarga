@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
 import phish from "../../Assets/Projects/phish.jpg";
 import leave from "../../Assets/Projects/leave.jpg";
 import crud from "../../Assets/Projects/crud.jpg";
+import crm from "../../Assets/Projects/crm.jpg";
+import gemini from "../../Assets/Projects/gemini.jpg";
 
 function Projects() {
   return (
@@ -19,6 +20,34 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={crm}
+              isBlog={false}
+              title="Customer Relationship Management System"
+              description="I am a dedicated software developer with a strong focus on full stack development. Recently, I interned at Coapps, where I contributed to the creation of a Customer Relationship Management (CRM) system using React, HTML, CSS, JavaScript, MySQL, and Django."
+              ghLink="https://github.com/ganeshdarga"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={phish}
+              isBlog={false}
+              title="URL Phishing detection using ML"
+              description="Phishing is a form of cyber attack where malicious actors attempt to deceive individuals into revealing sensitive information such as usernames, passwords, or financial details by masquerading as a trustworthy entity in electronic communication.Machine learning (ML) can be employed to combat URL phishing by analyzing various features of URLs and web pages to identify potential phishing attempts. ML algorithms can be trained on large datasets containing both legitimate and phishing URLs, allowing them to learn patterns and characteristics indicative of phishing attacks."
+              ghLink="https://github.com/ganeshdarga"            
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={gemini}
+              isBlog={false}
+              title="Gemini Clone"
+              description="I am a passionate software developer with expertise in front-end technologies. Recently, I created a Gemini chat clone application using ReactJS, HTML, CSS, and JavaScript. This project showcases my ability to build responsive, interactive, and user-friendly web applications."
+              ghLink="https://github.com/ganeshdarga"
+              demoLink=" https://ganeshdarga.github.io/Geminiclone/"          
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leave}
@@ -44,26 +73,9 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={phish}
-              isBlog={false}
-              title="URL Phishing detection using ML"
-              description="Phishing is a form of cyber attack where malicious actors attempt to deceive individuals into revealing sensitive information such as usernames, passwords, or financial details by masquerading as a trustworthy entity in electronic communication.Machine learning (ML) can be employed to combat URL phishing by analyzing various features of URLs and web pages to identify potential phishing attempts. ML algorithms can be trained on large datasets containing both legitimate and phishing URLs, allowing them to learn patterns and characteristics indicative of phishing attacks."
-              ghLink="https://github.com/ganeshdarga"            
-            />
-          </Col>
+         
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+
 
         </Row>
       </Container>

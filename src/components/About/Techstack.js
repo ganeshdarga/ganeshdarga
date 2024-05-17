@@ -12,6 +12,8 @@ import {
   SiMysql,
 } from "react-icons/si";
 import { FaCss3, FaHtml5 } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
+
 
 
 function Techstack() {
@@ -53,7 +55,7 @@ function Techstack() {
       <div className="progress-container" >
           <div className="progress-bar" style={{ '--progress-width':"50%"  }}><b className="percent">50%</b></div>
         </div>
-        <DiNodejs />
+        <DiDjango  />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="progress-container" >
@@ -63,7 +65,7 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="progress-container" >
-          <div className="progress-bar" style={{ '--progress-width':"40%"  }}><b className="percent">%</b></div>
+          <div className="progress-bar" style={{ '--progress-width':"40%"  }}><b className="percent">50%</b></div>
         </div>
         <DiGit />
       </Col>
